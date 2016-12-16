@@ -74,6 +74,13 @@
         top: 85%;
         left: 50%;
         transform: translate(-50%, 0);
+        width: 50%;
+        align-items: center;
+
+       }
+
+       .buttons * {
+          flex: 0 0 auto;
        }
 
        #audio_button {
@@ -97,6 +104,24 @@
 
        .temer {
           width: 55%;
+       }
+
+       .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25%;
+        position: fixed;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        height: 200px;
+        align-items: center;
+       }
+
+       .buttons * {
+          flex: 1 0 auto;
+          width: 100%;
        }
       }
 

@@ -108,12 +108,28 @@
             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
           </form>
         </div>
-        <audio controls loop autoplay>
+        <audio id="player" controls loop autoplay>
           <source src="pumped up kicks(cut).ogg" type="audio/ogg">
             Your browser does not support the audio element.
         </audio>
-       
-
+        <div>
+          <button id="audio_button" onclick="if(document.getElementById('player').paused){
+                              document.getElementById('player').play()
+                              this.innerHTML = 'Pause'
+                            }else{
+                              document.getElementById('player').pause()
+                              this.innerHTML = 'Play'
+                            } ">
+                                <script type="text/javascript">
+                                    player = document.getElementById('player')
+                                    if(!player.paused){
+                                      document.write("Play")
+                                    }else{
+                                      document.write("Pause")
+                                    }
+                                </script>
+          </button>
+        </div>
      </body>
 </html>
 

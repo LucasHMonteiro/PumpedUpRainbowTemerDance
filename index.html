@@ -25,14 +25,21 @@
        @-moz-keyframes spin {
          from { -moz-transform: translate(-50%, -50%) rotate(0deg); }
          to { -moz-transform: translate(-50%, -50%) rotate(360deg); }
+         from {-webkit-filter: hue-rotate(0deg); filter: hue-rotate(0deg);}
+         to {-webkit-filter: hue-rotate(360deg); filter: hue-rotate(360deg);}
        }
        @-webkit-keyframes spin {
          from { -webkit-transform: translate(-50%, -50%) rotate(0deg); }
          to { -webkit-transform: translate(-50%, -50%) rotate(360deg); }
+         from {-webkit-filter: hue-rotate(0deg); filter: hue-rotate(0deg);}
+         to {-webkit-filter: hue-rotate(360deg); filter: hue-rotate(360deg);}
        }
        @keyframes spin {
          from {transform: translate(-50%, -50%) rotate(0deg);}
          to {transform: translate(-50%, -50%) rotate(360deg);}
+         from {-webkit-filter: hue-rotate(0deg); filter: hue-rotate(0deg);}
+         to {-webkit-filter: hue-rotate(360deg); filter: hue-rotate(360deg);}
+
        }
        .temer {
          position: fixed;

@@ -2,182 +2,23 @@
 <html>
   <head>
     <base target="_top">
-    <title>Pumped Up Rainbow Temer Dance</title>
-    <meta property="og:image" content="temer.png">
-    <meta property="og:description" content="Pumped Up Rainbow Temer Dance">
-    <link rel="icon" 
-      type="image/png" 
-      href="temer.png">
-    <style>
-       * { box-sizing: border-box;}
-       body {background-color: green; animation: bg-transition 3s infinite alternate}
-       
-       @keyframes bg-transition {
-         0% {background-color: green;}
-         50% {background-color: yellow;}
-         100% {background-color: blue;}
-       }
-        
-        audio {
-            display: none;        
-        }
-              
-       @-moz-keyframes spin {
-         from { -moz-transform: translate(-50%, -50%) rotate(0deg); }
-         to { -moz-transform: translate(-50%, -50%) rotate(360deg); }
-         from {-webkit-filter: hue-rotate(0deg); filter: hue-rotate(0deg);}
-         to {-webkit-filter: hue-rotate(360deg); filter: hue-rotate(360deg);}
-       }
-       @-webkit-keyframes spin {
-         from { -webkit-transform: translate(-50%, -50%) rotate(0deg); }
-         to { -webkit-transform: translate(-50%, -50%) rotate(360deg); }
-         from {-webkit-filter: hue-rotate(0deg); filter: hue-rotate(0deg);}
-         to {-webkit-filter: hue-rotate(360deg); filter: hue-rotate(360deg);}
-       }
-       @keyframes spin {
-         from {transform: translate(-50%, -50%) rotate(0deg);}
-         to {transform: translate(-50%, -50%) rotate(360deg);}
-         from {-webkit-filter: hue-rotate(0deg); filter: hue-rotate(0deg);}
-         to {-webkit-filter: hue-rotate(360deg); filter: hue-rotate(360deg);}
-
-       }
-       .temer {
-         position: fixed;
-         top: 40%;
-         left: 50%;
-         
-         -webkit-animation-name: spin;
-         -webkit-animation-duration: 3000ms;
-         -webkit-animation-iteration-count: infinite;
-         -webkit-animation-timing-function: linear;
-         -moz-animation-name: spin;
-         -moz-animation-duration: 3000ms;
-         -moz-animation-iteration-count: infinite;
-         -moz-animation-timing-function: linear;
-         -ms-animation-name: spin;
-         -ms-animation-duration: 3000ms;
-         -ms-animation-iteration-count: infinite;
-         -ms-animation-timing-function: linear;
-    
-         animation-name: spin;
-         animation-duration: 3000ms;
-         animation-iteration-count: infinite;
-         animation-timing-function: linear;
-       }
-       
-       .buttons {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 25%;
-        position: fixed;
-        top: 85%;
-        left: 50%;
-        transform: translate(-50%, 0);
-        width: 30%;
-        align-items: center;
-
-       }
-
-       .buttons * {
-          flex: 0 0 auto;
-       }
-
-       #audio_button {
-        height: 25px;
-        width: 25px;
-        background: url("pause.png");
-        background-repeat: no-repeat;
-       }
-
-     @media only screen and (max-device-width:480px){
-       #audio_button {
-          position: fixed;
-          width: 10vw;
-          height: 10vw;
-          margin-top: 50px;
-          left: 50%;
-          transform: translate(-50%, 0);
-          background: url("play.png");
-          background-repeat: no-repeat;
-       }
-
-       .temer {
-          width: 55%;
-       }
-
-       .buttons {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 25%;
-        position: fixed;
-        top: 85%;
-        left: 50%;
-        transform: translate(-50%, 0);
-        height: 200px;
-        align-items: center;
-       }
-
-       .buttons * {
-          flex: 1 0 auto;
-          width: 100%;
-       }
-      }
-
-    </style>
+    <link rel="stylesheet" href="./assets/css/style.css">
   </head>
-     <body>
-        <script>window.twttr = (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0],
-            t = window.twttr || {};
-          if (d.getElementById(id)) return t;
-          js = d.createElement(s);
-          js.id = id;
-          js.src = "https://platform.twitter.com/widgets.js";
-          fjs.parentNode.insertBefore(js, fjs);
+     <body class="brazil-body">
+       <div id="language">
+         <img class="language" src="./assets/img/us_flag.png" alt="">
+       </div>
+       <div id="face">
+         <img  class="temer" src="https://i.imgur.com/SFWDGlL.png">
+       </div>
+        <form class="donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="JCMUTCNTDMX5W">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira fácil e segura de enviar pagamentos online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/bR-s4ReIxJo?autoplay=1&loop=1&playlist=bR-s4ReIxJo" frameborder="0" allowfullscreen></iframe>
 
-          t._e = [];
-          t.ready = function(f) {
-            t._e.push(f);
-          };
-
-          return t;
-          }(document, "script", "twitter-wjs"));
-        </script>
-        <img class="temer" src="https://i.imgur.com/SFWDGlL.png">
-        <div class="buttons">
-          <a class="twitter-follow-button" href="https://twitter.com/Lucashtm" data-show-screen-name="false">
-            Follow @Lucashtm
-          </a>
-          <form class="donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="hosted_button_id" value="JCMUTCNTDMX5W">
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira fácil e segura de enviar pagamentos online!">
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-          </form>
-        </div>
-        <audio id="player" controls loop autoplay>
-          <source src="pumped up kicks(cut).ogg" type="audio/ogg">
-            Your browser does not support the audio element.
-        </audio>
-        <button style=" background-size: contain;" id="audio_button" 
-            onclick="if(document.getElementById('player').paused){
-                      document.getElementById('player').play()
-                      this.style.backgroundImage = 'url(pause.png)'
-                    }else{
-                      document.getElementById('player').pause()
-                      this.style.backgroundImage = 'url(play.png)'
-                    } ">
-        </button>
-        <script type="text/javascript" onload="player = document.getElementById('player')
-                    if(player.paused){
-                     document.getElementById('audio_button').style.backgroundImage = 'url(play.png)'
-                    }else{
-                     document.getElementById('audio_button').style.backgroundImage = 'url(pause.png)'
-                    }"></script>
+        <script src="./assets/js/main.js"></script>
      </body>
 </html>
-
-
-

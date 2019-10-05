@@ -53,3 +53,9 @@ window.twttr = (function(d, s, id) {
     player.play();
   }, 100);
 
+const zg = document.querySelector('#zg');
+  document.addEventListener('keypress', function(e) {
+    if(e.keyCode === 122 ) {
+      zg.play();
+    }
+  })

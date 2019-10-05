@@ -19,7 +19,7 @@
     <img class="language" src="./assets/img/us_flag.png" alt="">
   </div>
   <div id="face">
-    <img class="temer" src="https://i.imgur.com/SFWDGlL.png">
+    <img class="temer" src="./assets/img/pt_br.png">
   </div>
   <div class="buttons">
     <a class="twitter-follow-button" href="https://twitter.com/Lucashtm" data-show-screen-name="false">
@@ -28,8 +28,8 @@
     <form class="donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
       <input type="hidden" name="cmd" value="_s-xclick">
       <input type="hidden" name="hosted_button_id" value="JCMUTCNTDMX5W">
-      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - A maneira fácil e segura de enviar pagamentos online!">
-      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal - A maneira fácil e segura de enviar pagamentos online!">
+      <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
     </form>
   </div>
 
@@ -37,21 +37,7 @@
       <source src="./assets/audio/pumped up kicks(cut).ogg" type="audio/ogg">
         Your browser does not support the audio element.
     </audio>
-    <button style=" background-size: contain;" id="audio_button"
-        onclick="if(document.getElementById('player').paused){
-                  document.getElementById('player').play()
-                  this.style.backgroundImage = 'url(assets/img/pause.png)'
-                }else{
-                  document.getElementById('player').pause()
-                  this.style.backgroundImage = 'url(assets/img/play.png)'
-                } ">
-    </button>
-    <script type="text/javascript" onload="player = document.getElementById('player')
-                if(player.paused){
-                 document.getElementById('audio_button').style.backgroundImage = 'url(assets/img/play.png)'
-                }else{
-                 document.getElementById('audio_button').style.backgroundImage = 'url(assets/img/pause.png)'
-                }"></script>
+    <button style=" background-size: contain;" id="audio_button"></button>
 
     <script src="./assets/js/main.js"></script>
 </body>

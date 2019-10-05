@@ -32,3 +32,24 @@ window.twttr = (function(d, s, id) {
   };
   return t;
   }(document, "script", "twitter-wjs"));
+
+
+
+  // Player
+  const player = document.querySelector('#player');
+  const playerBtn = document.querySelector('#audio_button');
+
+  playerBtn.addEventListener('click', function() {
+      if (player.paused) {
+        player.play();
+        this.style.backgroundImage = 'url(assets/img/pause.png)'
+      } else {
+        player.pause();
+        this.style.backgroundImage = 'url(assets/img/play.png)'
+      }
+  });
+
+  setTimeout(() => {
+    player.play();
+  }, 100);
+

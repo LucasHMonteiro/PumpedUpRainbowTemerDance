@@ -1,6 +1,6 @@
 * { box-sizing: border-box;}
 .brazil-body {background-color: green; animation: brazil 3s infinite alternate}
-.usa-body {background-color: red; animation: usa 3s infinite alternate}
+.usa-body, .korea-body {background-color: red; animation: usa 3s infinite alternate}
 
 @keyframes brazil {
   0% {background-color: green;}
@@ -61,6 +61,12 @@
   width: 50px;
   position: fixed;
   right: 0;
+}
+
+#language{
+  text-align: right;
+  position: absolute;
+  right: 10px;
 }
 
 audio {

@@ -1,21 +1,29 @@
 (function init() {
-  var currentBR = true;
-  var languageDiv = document.querySelector("#language");
   var faceDiv = document.querySelector("#face");
-  var languageButton = document.querySelector("#language img");
-  languageButton.addEventListener("click", function() {
-    if (currentBR) {
-      faceDiv.innerHTML = `<img class="temer" src="./assets/img/en_us.png" alt="">`;
-      languageButton.src = "./assets/img/br_flag.png";
-      document.body.classList.replace("brazil-body", "usa-body");
-      currentBR = false;
-    } else {
-      faceDiv.innerHTML = `<img class="temer" src="./assets/img/pt_br.png" alt="">`;
-      languageButton.src = "./assets/img/us_flag.png";
-      document.body.classList.replace("usa-body", "brazil-body");
-      currentBR = true;
+
+  const country = document.querySelector('#country');
+  country.addEventListener('change', function () {
+    switch (this.value) {
+      case 'pt_br':
+        faceDiv.innerHTML = `<img class="temer" src="./assets/img/pt_br.png" alt="">`;
+        document.body.className = "brazil-body";
+        break;
+        case 'us':
+          faceDiv.innerHTML = `<img class="temer" src="./assets/img/en_us.png" alt="">`;
+          document.body.className = "usa-body";
+        break;
+        case 'ko':
+        console.log('ko');
+        document.body.className = "korea-body";
+        faceDiv.innerHTML = `<img class="temer" src="./assets/img/ko.png" alt="">`;
+        break;
+      default:
+        faceDiv.innerHTML = `<img class="temer" src="./assets/img/pt_br.png" alt="">`;
+        document.body.className = "brazil-body";
     }
   });
+
+
 })();
 
 window.twttr = (function(d, s, id) {
@@ -53,6 +61,7 @@ window.twttr = (function(d, s, id) {
     player.play();
   }, 100);
 
+// Bonus audio
 const zg = document.querySelector('#zg');
   document.addEventListener('keypress', function(e) {
     if(e.keyCode === 122 ) {

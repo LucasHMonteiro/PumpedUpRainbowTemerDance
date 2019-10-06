@@ -63,8 +63,12 @@ window.twttr = (function(d, s, id) {
 
 // Bonus audio
 const zg = document.querySelector('#zg');
+const ch = document.querySelector('#ch');
   document.addEventListener('keypress', function(e) {
     if(e.keyCode === 122 ) {
       zg.play();
+    }
+    if(e.keyCode === 99 ) {
+      ch.play();
     }
   })
